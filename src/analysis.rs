@@ -48,8 +48,17 @@ impl FraudAnalysis {
         println!("\n=== Total of {} accounts detected as fraudulent collector accounts ===", collectors.len());
         println!("{:<15} {:<12} {:<12} {:<15} {:<15} {:<10}", 
             "Account", "In Count", "Out Count", "In Volume", "Out Volume", "Retention");
+        
+        let display_limit = 1000;
+        let remaining = if collectors.len() > display_limit {
+            collectors.len() - display_limit
+        } else {
+            0
+        };
+        
+        for (i, (account, metrics)) in collectors.iter().enumerate() {
+            if i >= display_limit { break; }
             
-        for (account, metrics) in &collectors {
             println!("{:<15} {:<12} {:<12} {:<15.2} {:<15.2} {:<10.2}", 
                 account, 
                 metrics.incoming_count, 
@@ -57,6 +66,10 @@ impl FraudAnalysis {
                 metrics.incoming_volume,
                 metrics.outgoing_volume,
                 metrics.retention_rate);
+        }
+        
+        if remaining > 0 {
+            println!("\n... and {} more accounts not shown", remaining);
         }
     }
     
@@ -66,8 +79,17 @@ impl FraudAnalysis {
         println!("\n=== Total of {} accounts detected as fraudulent money mule accounts ===", mules.len());
         println!("{:<15} {:<12} {:<12} {:<15} {:<15} {:<10}", 
             "Account", "In Count", "Out Count", "In Volume", "Out Volume", "Retention");
+        
+        let display_limit = 500;
+        let remaining = if mules.len() > display_limit {
+            mules.len() - display_limit
+        } else {
+            0
+        };
+        
+        for (i, (account, metrics)) in mules.iter().enumerate() {
+            if i >= display_limit { break; }
             
-        for (account, metrics) in &mules {
             println!("{:<15} {:<12} {:<12} {:<15.2} {:<15.2} {:<10.2}", 
                 account, 
                 metrics.incoming_count, 
@@ -75,6 +97,10 @@ impl FraudAnalysis {
                 metrics.incoming_volume,
                 metrics.outgoing_volume,
                 metrics.retention_rate);
+        }
+        
+        if remaining > 0 {
+            println!("\n... and {} more accounts not shown", remaining);
         }
     }
 }

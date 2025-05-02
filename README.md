@@ -206,25 +206,10 @@ cargo run --release
 - Program takes approximately 7 seconds to analyze the cleaned dataset (3.83s for loading, 3.83s for analysis)
 - Memory usage peaks at around 800MB during graph construction and analysis
 
-## G. Dependencies and Implementation Approach
-
-### Zero External Dependencies for Core Functionality
-- This project was intentionally designed with zero external dependencies for its core functionality
-- All required components are implemented directly in the project:
-  - Custom directed graph data structure to replace petgraph
-  - Manual CSV parsing
-  - Custom error handling and timing utilities
-
-### Benefits of the Zero-Dependency Approach
-- Complete control over all data structures and algorithms
-- No dependency versioning or compatibility issues
-- Smaller binary size and simpler deployment
-- Enhanced understanding of the underlying algorithms
-- Better educational value as a complete, self-contained system
-
-## H. AI-Assistance Disclosure
+## G. AI-Assistance 
 - ChatGPT was used for:
   - Suggesting the overall project structure
-  - Debugging graph construction issues
-  - Optimizing account metric calculations
-  - Assistance with documentation
+  - Various debugging/syntax errors help
+  - Assistance with documentation formatting
+  - Other substanstive AI-support: https://chatgpt.com/share/681545c2-0618-8010-a330-d99dcaff50bf 
+  - Used AI to initially help me brainstorm: https://chatgpt.com/share/6815466c-1768-8010-bd14-c07fcb2f85ec 

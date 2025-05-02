@@ -45,7 +45,6 @@ My project analyzes a financial transaction networks to identify accounts likely
   - Incoming/outgoing transaction counts
   - Total incoming/outgoing transaction volumes
   - Retention rate (percent of received money kept in the account)
-- **No external graph libraries**: The project implements its own graph data structure instead of using petgraph or other dependencies
 
 ## C. Code Structure
 

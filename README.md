@@ -211,6 +211,11 @@ cargo build --release
 
 # Run the application
 cargo run --release
+
+# Notes: 
+You can adjust how many lines of results you want displyed
+by visiting /src/analysis.rs on line 64 and 100 and changing the value. 
+It is set to 500 by default.
 ```
 
 ### Runtime Expectations

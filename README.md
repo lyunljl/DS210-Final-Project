@@ -9,8 +9,12 @@ My project analyzes a financial transaction networks to identify accounts likely
 
 ### Dataset
 - **Source**: Synthetic Financial Dataset for Fraud Detection (modified version of Kaggle dataset)
-- **Original File**: `Synthetic Financial Datasets For Fraud Detection.csv` (471MB)
+- **Original File Link**: https://www.kaggle.com/datasets/ealaxi/paysim1/data (471MB)
 - **Cleaned File**: `cleaned_fraud_dataset.csv` (128MB)
+
+    ```
+    You get that by running the cleaning-data.ipynb in /data which will clean the orginal raw dataset from kaggle and download a new one with the file name listed above to your local directory in /data
+    ```
 - **Structure**: CSV with 6 columns:
   - `step`: Time step (day) of the transaction
   - `type`: Type of transaction (TRANSFER or CASH_OUT)

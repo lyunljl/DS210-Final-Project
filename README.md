@@ -197,10 +197,13 @@ git clone https://github.com/lyunljl/DS210-Final-Project.git
 Synthetic Financial Datasets For Fraud Detection from Kaggle: https://www.kaggle.com/datasets/ealaxi/paysim1/data 
 
 # Confirm Project Structure
-move the downloaded datset to the data folder
+move the downloaded datset to the /data folder
+
+# Rename the data file to:
+  (Synthetic Financial Datasets For Fraud Detection.csv)
 
 # Run automated data cleaning
-run the cleaning-data.ipynb script to prepare dataset for analysis
+run the cleaning-data.ipynb script in /data to prepare dataset for analysis
 
 # Build the project
 cargo build --release

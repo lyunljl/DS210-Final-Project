@@ -13,7 +13,11 @@ My project analyzes a financial transaction networks to identify accounts likely
 - **Cleaned File**: `cleaned_fraud_dataset.csv` (128MB)
 
     ```
-    You get that by running the cleaning-data.ipynb in /data which will clean the orginal raw dataset from kaggle and download a new one with the file name listed above to your local directory in /data
+    You get that by running the cleaning-data.ipynb in /data.
+
+    Running the script will clean the raw dataset from kaggle. 
+
+    The script will then save the file listed above to your local directory in /data.
     ```
 - **Structure**: CSV with 6 columns:
   - `step`: Time step (day) of the transaction

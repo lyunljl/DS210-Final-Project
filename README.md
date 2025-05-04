@@ -219,8 +219,9 @@ It is set to 500 by default.
 ```
 
 ### Runtime Expectations
+- cleaning-data.ipynb will take about 20 to 30 seconds to properly clean the raw dataset
 - Program takes approximately 7 seconds to analyze the cleaned dataset (3.83s for loading, 3.83s for analysis)
-- Memory usage peaks at around 800MB during graph construction and analysis
+- Memory usage peaks shortly at around 800MB during graph construction and analysis
 
 ## G. AI-Assistance 
 - ChatGPT was used for:

@@ -194,7 +194,8 @@ The results show a large number of potential collector accounts (likely destinat
 git clone https://github.com/lyunljl/DS210-Final-Project.git
 
 # Download the Data
-Synthetic Financial Datasets For Fraud Detection from Kaggle: https://www.kaggle.com/datasets/ealaxi/paysim1/data 
+Synthetic Financial Datasets For Fraud Detection from Kaggle: 
+https://www.kaggle.com/datasets/ealaxi/paysim1/data 
 
 # Confirm Project Structure
 move the downloaded datset to the /data folder
